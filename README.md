@@ -1,2 +1,8 @@
 # python爬虫程序
 python+mysql
+autodownloadnews用于抓取百度热门新闻并存放进数据库中
+send_email用于从数据库抓取新闻并制作成html文件，发送到指定邮箱
+auto_send用于定时执行上面的两个程序，从而实现自动化
+抓取使用了selenium包，因为百度首页使用了ajax来局部更新，使用selenium来模拟用户操作，获取局部更新的内容。文件的内容是我预先浏览过的，所以用写死的xpath来进行查找
+发送邮件的时候使用了email包，用email里的mimetext方法把从mysql里提取出来的内容写成html，然后用到stmplib包进行发送，注意邮箱账户需要预先开通stmp功能。
+自动化用了简单的while循环不断检查是否到达了指定时间，使用sleep来避免过于频繁的检查
