@@ -26,13 +26,13 @@ for item in result:
 
 
 mail_host = "smtp.163.com"
-mail_user = "zliubz"
-mail_pass = "GUIIAUEKCBXVELXF"
+mail_user = ""
+mail_pass = ""
 
-sender = "zliubz@163.com"
-#receivers = ["zhibin.liu@faw-vw.com"]
-receivers = ["dongying.liang@faw-vw.com","951563375@qq.com","756853398@qq.com","zhibin.liu@faw-vw.com","992969238@qq.com"]
-#receivers=["992969238@qq.com"]
+sender = ""
+#receivers = []
+receivers = []
+#receivers=[]
 
 title = '百度每日热搜新闻'
 
